@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/msuryaditriputraR/t-rex-run/issues"
   },
-  "homepage": "https://github.com/msuryaditriputraR/t-rex-run#readme"
+  "homepage": "https://github.com/msuryaditriputraR/t-rex-run#readme",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
