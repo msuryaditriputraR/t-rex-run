@@ -11,6 +11,9 @@
 
 ## OVERVIEW 
 
+A fun Game T-Rex Run like when you are offline in Google Chrome 😁 made in pure Javascript (Typescript)
+HTML CSS
+
 ## SCREENSHOT
 
 
