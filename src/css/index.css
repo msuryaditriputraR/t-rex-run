@@ -1,2 +1,13 @@
 /* ==================== GOOGLE FONTS ===================== */
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+/* ==================== CSS RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Silkscreen", system-ui;
+}
