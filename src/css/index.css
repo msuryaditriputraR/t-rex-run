@@ -10,4 +10,70 @@
 
 body {
     font-family: "Silkscreen", system-ui;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 2.5rem;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: relative;
+    margin-top: 5rem;
+    background-image: url(../img/t-rex-background.png);
+    width: 100vw;
+    height: 200px;
+    animation: slideright 600s infinite linear;
+}
+
+.dino {
+    background-image: url(../img/t-rex.png);
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 5px;
+}
+
+header {
+    position: absolute;
+    font-weight: bold;
+    right: 15px;
+    gap: 1rem;
+    display: none;
+}
+
+.alert {
+    padding-top: 1.5rem;
+    display: none;
+}
+
+.alert__title {
+    margin-bottom: 0.75rem;
+}
+
+#btn-restart {
+    background-color: #333;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.15rem;
+    cursor: pointer;
+}
+
+#btn-restart:hover {
+    transform: translateY(2px);
+}
+
+#btn-restart img {
+    width: 30px;
 }
