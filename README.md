@@ -1,4 +1,4 @@
-# T-REX RUN
+# [T-REX RUN](https://msuryaditriputrar.github.io/t-rex-run/)
 
 ## TABLE OF CONTENTS
 - [T-REX RUN](#t-rex-run)
