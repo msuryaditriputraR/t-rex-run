@@ -16,6 +16,9 @@ HTML CSS
 
 ## SCREENSHOT
 
+![init-state](./src/img/screenshot/init-state.png)
+![play-state](./src/img/screenshot/play-state.png)
+![game-over](./src/img/screenshot/game-over.png)
 
 ## BUILD WITH
 
