@@ -5,6 +5,7 @@ export default function control() {
     const alert = document.querySelector(".alert") as HTMLElement;
     const background = document.querySelector(".background") as HTMLElement;
     const alertTitle = alert.querySelector(".alert__title") as HTMLElement;
+    const dieAudio = document.getElementById("die-audio") as HTMLAudioElement;
 
     const controlTimerId = setInterval(function () {
         const obstacle = grid?.querySelector(".obstacle") as HTMLElement;
@@ -16,6 +17,7 @@ export default function control() {
         if (obstaclePosition < 60 && dinoPosition < 60) {
             clearInterval(controlTimerId);
             setIsGameRender(false);
+            dieAudio.play();
 
             if (alert && alertTitle) {
                 alert.style.display = "block";

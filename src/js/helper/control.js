@@ -4,6 +4,7 @@ export default function control() {
     const alert = document.querySelector(".alert");
     const background = document.querySelector(".background");
     const alertTitle = alert.querySelector(".alert__title");
+    const dieAudio = document.getElementById("die-audio");
     const controlTimerId = setInterval(function () {
         const obstacle = grid === null || grid === void 0 ? void 0 : grid.querySelector(".obstacle");
         const dino = grid === null || grid === void 0 ? void 0 : grid.querySelector(".dino");
@@ -12,6 +13,7 @@ export default function control() {
         if (obstaclePosition < 60 && dinoPosition < 60) {
             clearInterval(controlTimerId);
             setIsGameRender(false);
+            dieAudio.play();
             if (alert && alertTitle) {
                 alert.style.display = "block";
                 alertTitle.textContent = "Game Over";
