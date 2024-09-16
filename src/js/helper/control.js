@@ -5,6 +5,7 @@ export default function control() {
     const background = document.querySelector(".background");
     const alertTitle = alert.querySelector(".alert__title");
     const dieAudio = document.getElementById("die-audio");
+    const actionIcon = document.getElementById("action-icon");
     const controlTimerId = setInterval(function () {
         const obstacle = grid === null || grid === void 0 ? void 0 : grid.querySelector(".obstacle");
         const dino = grid === null || grid === void 0 ? void 0 : grid.querySelector(".dino");
@@ -14,6 +15,7 @@ export default function control() {
             clearInterval(controlTimerId);
             setIsGameRender(false);
             dieAudio.play();
+            actionIcon.src = "./src/img/restart.svg";
             if (alert && alertTitle) {
                 alert.style.display = "block";
                 alertTitle.textContent = "Game Over";

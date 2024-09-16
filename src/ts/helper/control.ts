@@ -6,6 +6,9 @@ export default function control() {
     const background = document.querySelector(".background") as HTMLElement;
     const alertTitle = alert.querySelector(".alert__title") as HTMLElement;
     const dieAudio = document.getElementById("die-audio") as HTMLAudioElement;
+    const actionIcon = document.getElementById(
+        "action-icon"
+    ) as HTMLImageElement;
 
     const controlTimerId = setInterval(function () {
         const obstacle = grid?.querySelector(".obstacle") as HTMLElement;
@@ -18,6 +21,8 @@ export default function control() {
             clearInterval(controlTimerId);
             setIsGameRender(false);
             dieAudio.play();
+
+            actionIcon.src = "./src/img/restart.svg";
 
             if (alert && alertTitle) {
                 alert.style.display = "block";
