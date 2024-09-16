@@ -10,9 +10,10 @@
 
 body {
     font-family: "Silkscreen", system-ui;
-    background-color: #f7f7f7;
+    background-color: #fafafa;
     color: #333;
     text-align: center;
+    overflow: hidden;
 }
 
 h1 {
@@ -34,7 +35,10 @@ h1 {
     background-image: url(../img/t-rex-background.png);
     width: 100vw;
     height: 200px;
-    animation: slideright 600s infinite linear;
+    animation-name: slideright;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
 }
 
 .dino {
@@ -42,27 +46,39 @@ h1 {
     height: 60px;
     width: 60px;
     position: absolute;
+}
+
+.obstacle {
+    background-image: url(../img/cactus.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
     bottom: 5px;
 }
 
 header {
     position: absolute;
     font-weight: bold;
-    right: 15px;
+    right: 2rem;
+    top: -1.5rem;
     gap: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+}
+
+#highscore {
     display: none;
 }
 
 .alert {
     padding-top: 1.5rem;
-    display: none;
 }
 
 .alert__title {
     margin-bottom: 0.75rem;
 }
 
-#btn-restart {
+#btn-start {
     background-color: #333;
     border: none;
     border-radius: 0.25rem;
@@ -70,10 +86,10 @@ header {
     cursor: pointer;
 }
 
-#btn-restart:hover {
+#btn-start:hover {
     transform: translateY(2px);
 }
 
-#btn-restart img {
+#btn-start img {
     width: 30px;
 }
