@@ -1,6 +1,8 @@
 import { setIsJump } from "../context/isJump.js";
 export default function jump() {
     const dino = document.querySelector(".dino");
+    const jumpAudio = document.getElementById("jump-audio");
+    jumpAudio.play();
     let positionDino = 5;
     const GRAVITY = 0.9;
     let count = 0;
