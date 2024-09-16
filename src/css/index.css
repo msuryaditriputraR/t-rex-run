@@ -93,3 +93,23 @@ header {
 #btn-start img {
     width: 30px;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+    color: red;
+}
+
+footer a:hover {
+    text-decoration-style: solid;
+    text-underline-offset: 1px;
+}
