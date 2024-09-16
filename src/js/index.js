@@ -2,7 +2,6 @@ import { getIsGameRender, setIsGameRender } from "./context/isGameRender.js";
 import { getIsJump } from "./context/isJump.js";
 import jump from "./helper/jump.js";
 import renderGame from "./helper/renderGame.js";
-
 document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keydown", function (e) {
         if (e.code === "Space" && getIsGameRender()) {
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-
     document.addEventListener("click", function () {
         if (getIsGameRender()) {
             if (!getIsJump()) {
@@ -19,10 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-
-    const alertSection = document.querySelector(".alert") as HTMLElement;
+    const alertSection = document.querySelector(".alert");
     const btnStart = document.getElementById("btn-start");
-
     if (btnStart) {
         btnStart.addEventListener("click", function (e) {
             e.stopPropagation();
