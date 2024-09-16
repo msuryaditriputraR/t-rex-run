@@ -3,10 +3,14 @@ import { getScore, setScore } from "../context/score.js";
 export default function renderScore() {
     const score = document.getElementById("score");
     const highscore = document.getElementById("highscore");
+    const pointAudio = document.getElementById("point-audio");
     const initialScore = 0;
     setScore(initialScore);
     highscore.style.display = "none";
     const scoreTimerId = setInterval(() => {
+        if (getScore() % 1000 === 0 && getScore() !== 0) {
+            pointAudio.play();
+        }
         if (!getIsGameRender()) {
             if (!localStorage.getItem("highscore")) {
                 localStorage.setItem("highscore", getScore() + "");
