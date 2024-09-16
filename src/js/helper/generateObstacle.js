@@ -22,7 +22,7 @@ export default function generateObstacle(maxObstacleDuration, backgroundDuration
             if (maxObstacleDuration > 1500) {
                 if (getScore() % 100 === 0) {
                     maxObstacleDuration -= 100;
-                    backgroundDuration -= 10;
+                    backgroundDuration -= 5;
                 }
             }
             obstaclePosition -= 10;
